@@ -4,11 +4,10 @@ int binarySearch(int arr[], int n, int num) {
     int left = 0;
     int right = n-1; 
     while (left <= right) {
-        int mid = (left + right) / 2;  
-        if (arr[mid] == num) {           
+        int mid = (left+right)/2;  
+        if (arr[mid] == num){           
             return mid;              
-        }
-        else if (arr[mid] < num) {      
+        }else if (arr[mid] < num){      
             left = mid + 1;           
         }else {                       
             right = mid - 1;           
@@ -41,11 +40,11 @@ int main() {
 
     int result = binarySearch(arr, n, num);
 
-    if (result == -1)
+    if (result == -1){
         printf("khong tim thay", num);
-    else
-        printf("da tim thay tai vi tri %d ", num, result);
-
+    }else{
+		printf("da tim thay tai vi tri %d ", num, result);
+	}
     return 0;
 }
 
