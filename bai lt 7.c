@@ -10,8 +10,7 @@ int binarySearch(int arr[], int n, int num) {
         }
         else if (arr[mid] < num) {      
             left = mid + 1;           
-        }
-        else {                       
+        }else {                       
             right = mid - 1;           
         }
     }
