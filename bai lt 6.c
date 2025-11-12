@@ -14,7 +14,7 @@ int bubbleSoft(int arr[], int n){
 
 int printArr(int arr[], int n){
 	for (int i = 0; i < n; i++){
-	printf ("%d", arr[i]);
+		printf ("%d", arr[i]);
 	}
 	printf ("\n");
 }
